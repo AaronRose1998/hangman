@@ -1,0 +1,93 @@
+
+:root {
+    --color-primary: #2a292e;
+    --color-secondary: #ffcf00;
+    --color-accent: rgb(120 155 186);}
+
+body {
+    font-size: 65.2%;
+    background: linear-gradient(to right, grey, black);
+}
+
+.container {
+    width: 500px;
+    background-color: var(--color-primary);
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 3px;
+
+}
+
+.hangman {
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hangman__figure {
+    background-color: var(--color-secondary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.lives {
+    font-size: 4rem;
+    margin: 1rem;
+    bottom: 0;    
+    position: absolute;
+}
+
+
+.word-input {
+    text-align: center;
+    background-color: var(--color-accent);
+    outline: none;
+}
+
+.btn__tryLetter {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: var(--color-secondary);
+    width: 100%;
+}
+
+.btn__tryAgain {
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: brown;
+    width: 100%;
+}
+
+.btn__tryLetter:hover {
+    opacity: 0.8;
+}
+.btn__tryLetter:active {
+    opacity: 0.6;
+}
+
+.words__container {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 40px);
+    gap: 0.5rem 1rem;
+}
+
+.words__word {
+background-color: antiquewhite;
+font-size: 3rem;
+font-weight: bold;
+height: 50px;
+text-align: center;
+width: 50px;
+/* display: flex; */
+}
+
+.words__word span {
+    position: relative;
+    bottom: 7px;
+}
